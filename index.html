@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Test Input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h3>Pig Latin Formatter</h3>
+
+    <div>
+      <form name="myform" action="" method="GET">
+        Type in letter: <br />
+        <input type="text" name="inputbox" value="" required />
+        <input
+          type="button"
+          name="button"
+          value="Convert"
+          onClick="testResults(this.form)"
+        />
+
+        <h3 id="result_here">Result will be here</h3>
+
+        <table id="rules">
+          <tr>
+            <th>Conversion Rule</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>1. If the word starts with a `vowel`, return the word as is</td>
+            <td>apple => apple</td>
+          </tr>
+          <tr>
+            <td>
+              2. If the word has a vowel in the word, but vowel is not the first
+              character, the non-vowel characters should be shifted to the back
+              of the word, with `ay` appended
+            </td>
+            <td>hello => ellohay</td>
+          </tr>
+          <tr>
+            <td>3. If the word has no vowels at al, just append `ay`</td>
+            <td>dr => dray</td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
